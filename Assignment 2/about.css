@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+   box-sizing: border-box; 
+}
+
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0% auto;
+    padding: 0;
+    background-color: #131313;
+    color:white;
+    font-size: 16px;
+}
+h1,h2{
+    font-family: "Oswald", sans-serif;
+   
+}
+
+.container {
+    width: 90%;
+    max-width: 1500px;
+    padding: 2% 0% 10% 0%;
+    background-color: #141414;
+    margin: 0% auto;
+}
+#header{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding:2% 0% 3% 0%;
+}
+#header-img{
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-img img {
+    width: 90%;
+}
+
+#header-txt{
+    grid-column: 3/-1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header-txt h1{
+    font-size: 4em;
+    padding:0%;
+    margin: 0%;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid rgba(204, 102, 0, 0.4);
+}
+#header-txt h2{
+   font-size: 2em;
+   margin: 0%;
+   border-bottom: none;
+}
+
+#header-txt h3{
+    font-family: "Caveat", cursive;
+    margin-bottom: 1%;
+}
+#header-txt p{
+line-height: 1.5em;
+}
+
+.media {
+    margin: 3% auto 3% auto;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+#media-txt{
+    grid-column: 1/4;
+   
+}
+#media-txt h2{
+    padding-bottom: 1%;
+    margin-bottom:0%;
+    border-bottom: 2px solid rgba(204, 102, 0, 0.4);
+    display: inline-block;
+}
+#media-txt p{
+    line-height: 1.2em;
+}
+#content-aud{
+    grid-column: 4/-1;
+    padding-left: 4%;
+}
+#content-vid{
+    grid-column: 4/-1;
+    
+}
+#content-aud audio{
+    margin-top: 9%;
+    border: 2px solid rgba(204, 102, 0, 0.4);
+    border-radius: 26px;
+    width: 100%;
+}
+
+#content-vid video{
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 3%;
+    border-radius: 8px; 
+    border: 1px solid #ccc;
+
+}
+
+video, audio {
+    
+    max-width: 600px;
+}
+
+
+@media (max-width: 950px) {
+    
+    .container {
+        width: 100%;
+        padding: 0% 0% 10% 0%;
+    }
+
+    #header{
+        display: block;
+         padding:2% 0% 5% 0%;
+        background-image: url(Files/bg-transparent.jpg);
+        background-color: rgba(0, 0, 0, 0.2);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #header-img{
+        display: none;
+    }
+    #header-txt{
+        display: block;
+        padding: 3%;
+    }
+    
+    #header-txt h1{
+        font-size: 2.5em;
+        border-bottom: 2px solid rgba(204, 102, 0, 0.4);
+        padding:0% 0% 3% 0%;
+        letter-spacing: 0.03em;
+    }
+    #header-txt h2{
+       font-size: 1.3em;
+       padding: 7% 0% 0% 0%;
+       border-bottom: none;
+    }
+    
+    #header-txt h3{
+        margin-top: 0%;
+    }
+
+    #header-txt p{
+    font-size: 0.97em;
+    }
+    
+    .media {
+        margin: 1% auto 3% auto;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #media-txt h2{
+        margin-bottom:0%;
+     }
+
+    #media-txt p{
+        line-height: 1.2em;
+    }
+   
+    #content-aud{
+        padding-left: 0%;
+    }
+
+    #content-vid{
+        padding-left: 0%;
+        margin: 0% auto;
+    }
+    #content-vid video{
+        margin-top: 7%;
+        margin-left: 0%;   
+    }
+
+    #content-aud audio{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        border-radius: 26px;
+        border: none;
+        padding:0%;
+        width:60%;
+         
+
+    }
+}
+
+
+    @media (min-width: 951px) and (max-width: 1200px) {
+    
+            #header{
+                margin: 0% auto;
+            }
+
+            #header-img img {
+                width: 100%;
+            }
+
+            #header-txt{
+                padding-left: 3%;
+            }
+            
+            #header-txt h1{
+                font-size: 3em;
+            }
+
+            #header-txt h2{
+               font-size: 1.4em;
+    
+            }
+            
+            #header-txt h3{
+                font-family: "Caveat", cursive;
+                margin-bottom: 1%;
+                margin-top: 1%;
+            }
+
+            .media {
+                margin: 3% auto 3% auto;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+            }
+            #media-txt{
+                grid-column: 1/5;
+                font-size: 1em;
+            }
+
+            #content-aud h2{
+               padding-bottom: 0%;
+            }
+            #content-aud{
+                grid-column: 5/-1;
+                padding-left: 4%;
+            }
+            #content-vid{
+                grid-column: 5/-1;
+                display: flex;
+                justify-content: center;
+            }
+            #content-aud audio{
+                margin-top: 20%;
+                border: 2px solid rgba(204, 102, 0, 0.4);
+            }
+            
+  }
+

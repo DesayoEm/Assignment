@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Apply to AltSchool Africa</title>
+</head>
+<body>
+   <section class="hide">
+    <img src="Files/altschool-africa.png" alt="" >
+   </section> 
+    <div class="grid-container">
+        
+
+    <div id="img-wrapper">
+     <img src="Files/altsch.png" alt="Illustration of learning materials">
+     <h2 id="below-img">Learn highly sought <br> after skills without <br> hassle.</h2>
+     <div id="social">
+        <a href="#" target="blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v7H2v-7a6 6 0 0 1 6-6h8z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+            </svg>
+        </a>
+
+        <a href="#" target="blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37a4 4 0 1 1-4.73-4.73 4 4 0 0 1 4.73 4.73z"/>
+            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+          </svg>
+        </a>
+          
+        <a href="#" target="blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.5l.5-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+
+          <a href="#" target="blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+            </svg>
+          </a>
+          
+     </div>
+
+     <p id="tel-no">Tel: 0800ALTSCHOOL</p>
+     <p id="ref">©2024 AltSchool Africa. All rights reserved.</p>
+    </div>
+
+
+    <div id="form-section">
+           <p class = "side-text">
+            Already an AltSchooler? <a href="#">Sign In!</a>
+           </p> 
+
+           <div id="form-heading">
+            <h2>Signup</h2>
+            <p>Take the next steps to apply at AltSchool Africa</p>
+           </div>
+
+           <form action="/submit" method="post">
+            <section id="field1">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter first name">
+            </section>
+
+            <section id="field2">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter last name">
+            </section>   
+            
+            
+            <section id="field3">
+            <label for="Gender">Gender</label>
+                <select name="Gender" id="Gender" value="Gender">
+                    <option value="disabled" disabled selected>Select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+           </section>
+
+           <section id="field4">
+            <label for="date">Date of Birth</label>
+            <input type="date">
+           </section>
+           
+           <section id="field5">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="Enter email address">
+            </section>
+           
+           <section id="field6">
+           <label for="number">Phone number</label>
+           <input type="text" placeholder="00000000000">
+           </section>
+
+           <section id="field7">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="disabled" disabled selected>Select your country</option>
+                <option value="AF">Afghanistan</option>
+                <option value="AL">Albania</option>
+                <option value="DZ">Algeria</option>
+                <option value="AS">American Samoa</option>
+                <option value="AD">Andorra</option>
+                <option value="AO">Angola</option>
+                <option value="AI">Anguilla</option>
+                <option value="AQ">Antarctica</option>
+                <option value="AG">Antigua and Barbuda</option>
+                <option value="AR">Argentina</option>
+                <option value="AM">Armenia</option>
+                <option value="AW">Aruba</option>
+            </select>
+           </section>
+
+           <section id="field8">
+            <label for="location">State/City of Residence</label>
+            <input type="text" id="location" name="location" placeholder="Enter your state of residence">
+           </section>
+
+           <section id="field9" class="wide">
+            <label for="channel">How did you hear about us?</label>
+            <select name="channel" id="channel">
+                <option value="" disabled selected>Select channel</option>
+                <option value="">Twitter</option>
+                <option value="">Facebook</option>
+                <option value="">Linkedin</option>
+                <option value="">YouTube</option>
+                <option value="">Friend</option>
+                <option value="">Whatsapp</option>
+                <option value="">Instagram</option>
+                <option value="">Billboard</option>
+            </select>
+           </section>
+                
+           <section id="field10">
+            <label for="password">Password</label>
+             <input type="password" name="password" id="password" placeholder="Enter password">
+           </section>
+
+           <section id="field11">
+            <label for="confirmpassword">Confirm Password</label>
+            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Enter password again">
+        
+           </section>
+
+       <section id="form-footer" class="wide">
+            <p>
+                    By clicking continue, I agree to  <a href="#">Terms of Use </a> and acknowledge that I have read the <a href="#">Privacy Policy.</a>
+                   </p> 
+                   <input type="submit" value="Submit">
+                </section>
+        </form>
+    </div>
+
+      
+</div>
+</body>
+</html>

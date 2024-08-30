@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+*{
+   box-sizing: border-box; 
+   margin: 0;
+}
+h2{
+    font-family: "Oswald", sans-serif;
+    padding: 0% 0% 3% 0%;
+    text-align: left;
+    font-size:1.8em;
+    letter-spacing: 0.04em;
+    
+    display: inline-block;
+}
+h3{
+    font-size:1.1em;
+    padding-bottom: 2%;
+    letter-spacing: 0.03em;
+}
+
+body{
+font-family: "Roboto Condensed", sans-serif;
+margin:5% auto;
+}
+
+#container{
+    width:90%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    margin: 0 auto;
+}
+
+
+ .card{
+    border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px -20px rgba(18, 52, 86, 1);
+    width: 90%;
+    height:60vh;
+    background-color: white;
+    padding: 6% 3% 5% 3%;
+    margin: 5% auto;
+    background-color: #F5F5F5;
+   
+}
+button{
+    width:40%;
+    padding:2.5% 1%;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-family: "Alegreya Sans SC", sans-serif;
+    transition: all 0.3s ease;
+    
+}
+#card1{
+    grid-column: 1/2;
+    border-top:4px solid #306EFF;
+}
+
+#card1 button{
+    background-color: #306EFF;
+}
+
+#card2{
+    grid-column: 2/-1;
+    border-top:4px solid #E1AD01;
+}
+
+#card2 button{
+    background-color: #E1AD01;
+    
+}
+#card3{
+    grid-column: 1/2;
+    border-top:4px solid #7D0541;
+}
+
+#card3 button{
+background-color: rgba(125,5,65,0.5);
+}
+#card4{
+    grid-column: 2/-1; 
+    border-top:4px solid #006A4E;
+}
+#card4 button{
+background-color: #4E8975;
+}
+
+.card p{line-height: 1.5em;
+font-family: "Alegreya Sans", sans-serif;
+font-weight: 400;
+font-size: 1em;
+}
+
+
+.bold{
+    font-weight: bold;
+    font-size: 1em;
+}
+
+a{
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+button:hover{
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-2px); 
+}
+@media only screen and (max-width: 700px) {
+    h2{
+        padding: 0% 0% 3% 0%;
+        font-size:1.3em;
+    }
+
+    h3{
+        font-size:1.1em;
+        padding-bottom: 2%;
+    }
+    
+    body{
+    margin:5% auto;
+    }
+    
+    #container{
+        width:95%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    
+     .card{
+        border-radius: 5px;
+        border-radius: 5px;
+        box-shadow: 0px 15px 20px -20px rgba(18, 52, 86, 1);
+        width: 90%;
+        height:55vh;
+        padding: 6% 3% 5% 3%;
+        margin: 5% auto;
+    } 
+}
+
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+    h2{
+        padding: 0% 0% 3% 0%;
+        font-size:1.3em;
+    }
+
+    h3{
+        font-size:1.1em;
+        padding-bottom: 2%;
+    }
+    
+    body{
+    margin:5% auto;
+    }
+    
+    #container{
+        width:95%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    
+     .card{
+        width: 90%;
+        height:65vh;
+    } 
+}
+    
+
+@media only screen and (min-width: 1500px){
+    .card{
+       
+        height:50vh;
+       
+    }
+}
